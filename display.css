@@ -1,0 +1,43 @@
+#Layer1 {
+	position: absolute;
+	width: 1184px;
+	height: 786px;
+	z-index: 1;
+	left: 92px;
+	top: -5px;
+}
+#main {
+	border:solid;
+}
+#slide_img{	
+	border:solid;
+}
+#offers{
+	border:solid;	
+}
+#developeroption{
+	border:solid;
+	height:100px;	
+}
+#menu{
+	border:solid;	
+	height:50px;
+}
+#header{
+	border:solid;
+	height:100px;
+	}
+
+html, body, #map-canvas {
+        height: 100%;
+        margin: 0px;
+        padding: 0px
+      }
+	 
+  .carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+      width: 400px;
+      margin: auto;
+  }
+ 
+	  
