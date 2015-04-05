@@ -37,7 +37,7 @@
 		
 		
 		<h1 align="center">Log In </h1>
-		<form action="index.php" method="post">
+		<form action="login.php" method="post">
 		<table width="100%"   cellspacing="1" cellpadding="1" >
   		<tr>
     		<td width="250" height="35" align="right">User Id </td>
@@ -51,6 +51,7 @@
     		<td height="47" colspan="2" align="center"><input id="button" type="submit" name="submit" value="Log In"/></td>
    		</tr>
 		</table>
+		
 		<?php include 'loginlogic.php'?>
 		
 		</form>

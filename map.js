@@ -2,20 +2,24 @@
 var map;
 
 function initialize() {
-  var myLatlng = new google.maps.LatLng(latt,longi);
+	
+  
   var mapOptions = {
-    zoom: 4,
+    zoom: 8,
     center: myLatlng
   };
 
    map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
 
+  var myLatlng = new google.maps.LatLng(latt,longi);
+   
+   
    var marker = new google.maps.Marker({
       position: myLatlng,
       map: map,
       title: 'Hello World!'
   });
-
+  
    
    
    
