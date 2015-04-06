@@ -1,5 +1,6 @@
 
 var map;
+var contentString;
 
 function initialize() {
 	
@@ -11,15 +12,29 @@ function initialize() {
 
    map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
 
-  var myLatlng = new google.maps.LatLng(latt,longi);
-   
-   
-   var marker = new google.maps.Marker({
+
+   var i;
+for(i=0;i<latt.length;i++)
+{    
+	  contentString = name[i];
+	
+	  var myLatlng = new google.maps.LatLng(latt[i],longi[i]);
+	  var marker = new google.maps.Marker({
       position: myLatlng,
       map: map,
-      title: 'Hello World!'
+      title:name[i]
+      
   });
   
+   var infowindow = new google.maps.InfoWindow({
+      content: contentString
+  });
+  
+	
+}
+
+   
+   
    
    
    
@@ -46,11 +61,8 @@ function initialize() {
   }
   
   
-    var contentString = name;
+    //var contentString = name;
 
-  var infowindow = new google.maps.InfoWindow({
-      content: contentString
-  });
 google.maps.event.addListener(marker, 'click', function() {
     infowindow.open(map,marker);
   });

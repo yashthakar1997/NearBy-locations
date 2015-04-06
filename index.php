@@ -34,9 +34,8 @@
 		<table width="100%" border="1" cellspacing="0" cellpadding="0">
   			<tr>
     		<th height="45" scope="col"><a href="index.php">Home</a></th>
-    		<th scope="col"><a href="login.php">Log in</a></th>
-    		<th scope="col"><a href="Reg.php">Registration</a></th>
-    		<th scope="col">Offers</th>
+    		<th scope="col"><a href="#">Offers</a></th>
+    		<th scope="col"><a href="#">cafes</a></th>
     		<th scope="col">About</th>
   			</tr>
 		</table>
@@ -47,11 +46,19 @@
         
 	<div class="offers" id="offers" style="height:400px;">
         
-   		<?php include 'db_show.php';?>  
+   		<?php include 'db_show.php';?> 
+		
+		<?php 
+			
+		?>
     	<script>
+		
     	var latt = <?php echo json_encode($lat);?>;
-	  	var longi = <?php echo json_encode($lon);?>;
+	  	var longi= <?php echo json_encode($lon);?>;
 		var name = <?php echo json_encode($name);?>;
+		for(i=0;i<name.length;i++){
+		document.write(name[i]);
+		}
 		</script>
 		<script src="map.js"></script>
         
