@@ -1,39 +1,48 @@
 
+		
 var map;
-var contentString;
+
 
 function initialize() {
 	
   
   var mapOptions = {
-    zoom: 8,
+    zoom: 10,
     center: myLatlng
   };
 
    map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
 
+	var i,j;
+	for(i=0;i<latt.length;i++)
+	{    
+		//contentString = 'hello';
+		//content: contentString
 
-   var i;
-for(i=0;i<latt.length;i++)
-{    
-	  contentString = name[i];
-	
+		  var infowindow = new google.maps.InfoWindow();
+ 		
 	  var myLatlng = new google.maps.LatLng(latt[i],longi[i]);
+	  
+	  for(j=0;j<name.length;j++){
+		name[i] +=name[j];
+	  }
+	  
 	  var marker = new google.maps.Marker({
       position: myLatlng,
       map: map,
       title:name[i]
-      
-  });
-  
-   var infowindow = new google.maps.InfoWindow({
-      content: contentString
-  });
-  
+		});
+	  
+  google.maps.event.addListener(marker, 'click', function() {
+	infowindow.setContent(this.title);
+	infowindow.open(map,this);
+    });
 	
+  
 }
 
-   
+    
+ 
    
    
    
@@ -63,9 +72,7 @@ for(i=0;i<latt.length;i++)
   
     //var contentString = name;
 
-google.maps.event.addListener(marker, 'click', function() {
-    infowindow.open(map,marker);
-  });
+	
   
   
   
@@ -77,7 +84,7 @@ function handleNoGeolocation(errorFlag) {
   } else {
     var content = 'Error: Your browser doesn\'t support geolocation.';
   }
-
+    
   var options = {
     map: map,
     position: new google.maps.LatLng(60, 105),
@@ -89,6 +96,7 @@ function handleNoGeolocation(errorFlag) {
 // endddddddddddddddd geo location
 
 
+ 
  
 
 

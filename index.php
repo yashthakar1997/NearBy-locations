@@ -28,7 +28,7 @@
       		<div align="left"><a href="index.php"><img src="logo.png" height="100px"></a>
 	    </div>
       </div>
-    <div class="header" id="header" ><p><h1 align="center">Near By Location <br /><h6>we are still improving this site <b>Thnks for visit</b></h6></h1></p></div>
+    <div class="header" id="header" ><p><h1 align="center">Near By Food <br /><h6>Searching for food <b>Thnks for visit</b></h6></h1></p></div>
  		
  	  <div class="menu" id="menu">
 		<table width="100%" border="1" cellspacing="0" cellpadding="0">
@@ -56,6 +56,7 @@
     	var latt = <?php echo json_encode($lat);?>;
 	  	var longi= <?php echo json_encode($lon);?>;
 		var name = <?php echo json_encode($name);?>;
+		
 		for(i=0;i<name.length;i++){
 		document.write(name[i]);
 		}
@@ -66,7 +67,7 @@
     
     <div class="img" id="slide_img" style="height:300px">
                 
-			<?php include 'slide_img.php';?>                            
+	<?php include 'slide_img.php';?>                            
      
     </div>
        
