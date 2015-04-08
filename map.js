@@ -1,6 +1,7 @@
 
 		
 var map;
+var i;
 
 
 function initialize() {
@@ -23,9 +24,10 @@ function initialize() {
  		
 	  var myLatlng = new google.maps.LatLng(latt[i],longi[i]);
 	  
-	  for(j=0;j<name.length;j++){
-		name[i] +=name[j];
-	  }
+	 // for(j=0;j<name.length;j++){
+
+		//name[i] +=name[j];
+	  //}
 	  
 	  var marker = new google.maps.Marker({
       position: myLatlng,

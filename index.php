@@ -52,15 +52,16 @@
 			
 		?>
     	<script>
-		
-    	var latt = <?php echo json_encode($lat);?>;
+
+            var latt = <?php echo json_encode($lat);?>;
 	  	var longi= <?php echo json_encode($lon);?>;
 		var name = <?php echo json_encode($name);?>;
-		
-		for(i=0;i<name.length;i++){
-		document.write(name[i]);
-		}
+
+            
+
 		</script>
+
+
 		<script src="map.js"></script>
         
     </div>
