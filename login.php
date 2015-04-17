@@ -26,7 +26,7 @@
 		<table width="100%" border="1" cellspacing="1" cellpadding="1">
   			<tr>
     		<th height="45" scope="col"><a href="index.php">Home</a></th>
-    		<th scope="col"><a href="login.php">Log in</a></th>
+    		<th scope="col"><a href="index.php">logout</a></th>
     		<th scope="col"><a href="Reg.php">Registration</a></th>
     		<th scope="col">Offers</th>
     		<th scope="col">About</th>
@@ -61,7 +61,7 @@
         
 	<div class="offers" id="offers" style="height:400px;">
         
-   <?php include 'db_show.php';?>  
+				<?php include 'db_show.php';?>  
         
     </div>
     

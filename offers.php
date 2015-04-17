@@ -28,7 +28,7 @@
       		<div align="left"><a href="index.php"><img src="logo.png" height="100px"></a>
 	    </div>
       </div>
-    <div class="header" id="header" ><p><h1 align="center">Near By location<br /><h6>Searching for food <b>still working</b></h6></h1></p></div>
+    <div class="header" id="header" ><p><h1 align="center">Near By Food <br /><h6>Searching for food <b>Thnks for visit</b></h6></h1></p></div>
  		
  	  <div class="menu" id="menu">
 		<table width="100%" border="1" cellspacing="0" cellpadding="0">
@@ -36,43 +36,28 @@
     		<th height="45" scope="col"><a href="index.php">Home</a></th>
     		<th scope="col"><a href="reg.php">registration</a></th>
     		<th scope="col"><a href="login.php">login</a></th>
-            <th scope="col"><a href="offers.php">offers</a></th>
-    		<th scope="col"><a href="aboutus.php">About</a></th>
+            <th scope="col"><a href="login.php">offers</a></th>
+    		<th scope="col">About</th>
   			</tr>
 		</table>
  	 </div>
-     <div class="maincontent" id="main" style="float:left;height:400px;width:700px;">
-        <div id="map-canvas"></div>
+     <div class="maincontent" id="main" style="float:left;height:400px;width:100%;border:solid">
+
+        <iFRAME src="http://www.coupondunia.in/foodpanda?src=most_popular" style="height:100%;width:100%" ;>
+
+        </iFRAME>
+
    	 </div>
         
-	<div class="offers" id="offers" style="height:400px;">
-        
-   		<?php include 'db_show.php';?>
-		
-    	<script>
-
-            var latt = <?php echo json_encode($lat);?>;
-	  	var longi= <?php echo json_encode($lon);?>;
-		var name = <?php echo json_encode($name);?>;
-
-
-
-
-		</script>
-
-
-		<script src="map.js"></script>
-        
-    </div>
-    
     <div class="img" id="slide_img" style="height:300px;border:solid;">
                 
 	<?php include 'slide_img.php';?>                            
      
     </div>
        
-    <div class="footer" id="Developer" >
-          </div>
+    <div class="footer" id="Developer" style="border:solid;">
+     
+	 </div>
         
         
   </div>

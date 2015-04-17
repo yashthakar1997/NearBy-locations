@@ -28,7 +28,7 @@
       		<div align="left"><a href="index.php"><img src="logo.png" height="100px"></a>
 	    </div>
       </div>
-    <div class="header" id="header" ><p><h1 align="center">Near By location<br /><h6>Searching for food <b>still working</b></h6></h1></p></div>
+    <div class="header" id="header" ><p><h1 align="center">Near By Food <br /><h6>Searching for food <b>Thnks for visit</b></h6></h1></p></div>
  		
  	  <div class="menu" id="menu">
 		<table width="100%" border="1" cellspacing="0" cellpadding="0">
@@ -37,18 +37,25 @@
     		<th scope="col"><a href="reg.php">registration</a></th>
     		<th scope="col"><a href="login.php">login</a></th>
             <th scope="col"><a href="offers.php">offers</a></th>
-    		<th scope="col"><a href="aboutus.php">About</a></th>
+    		<th scope="col">About</th>
   			</tr>
 		</table>
  	 </div>
      <div class="maincontent" id="main" style="float:left;height:400px;width:700px;">
-        <div id="map-canvas"></div>
-   	 </div>
+        <h1> hello there</h1>
+
+ we want to go in to too much detail here because I am going to talk about the advantages of each <br> page as we go through them. I’m hoping to use this post as <br />a way of showing you what I believe you should<br /> be doing on your own page.<br />
+
+
+		
+	 </div>
+   	 
         
 	<div class="offers" id="offers" style="height:400px;">
         
-   		<?php include 'db_show.php';?>
+			Creating Happy Households
 		
+		    
     	<script>
 
             var latt = <?php echo json_encode($lat);?>;
@@ -57,11 +64,10 @@
 
 
 
-
 		</script>
-
-
-		<script src="map.js"></script>
+		<p>
+					
+		</p>
         
     </div>
     
@@ -78,4 +84,4 @@
   </div>
   </body>
   </html>
-</div>
+  </div>

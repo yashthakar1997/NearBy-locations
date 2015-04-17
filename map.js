@@ -4,6 +4,7 @@ var map;
 var i;
 
 
+
 function initialize() {
 	
   
@@ -14,6 +15,8 @@ function initialize() {
 
    map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
 
+   		
+   
 	var i,j;
 	for(i=0;i<latt.length;i++)
 	{    
@@ -32,7 +35,7 @@ function initialize() {
 	  var marker = new google.maps.Marker({
       position: myLatlng,
       map: map,
-      title:name[i]
+      title:'cafes'
 		});
 	  
   google.maps.event.addListener(marker, 'click', function() {
@@ -59,7 +62,7 @@ function initialize() {
       var infowindow = new google.maps.InfoWindow({
         map: map,
         position: pos,
-        content: 'Location found using HTML5.'
+        content: 'Your location is'
       });
 
       map.setCenter(pos);

@@ -1,13 +1,22 @@
+body{
+background:#ccccff;   
+
+}
+
 #Layer1 {
 	position: absolute;
 	width: 1184px;
-	height: 786px;
+	height: 870PX;
 	z-index: 1;
 	left: 92px;
 	top: -5px;
+	border:solid;   
+		
 }
 #main {
 	border:solid;
+	
+}
 }
 #slide_img{	
 	border:solid;
